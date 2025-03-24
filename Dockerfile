@@ -28,8 +28,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
-RUN sudo apt install -y nodejs 
-RUN sudo apt install -y npm 
+RUN sudo apt-get install -y nodejs 
+RUN sudo apt-get install -y npm 
 # RUN sudo npm install -g pnpm@latest-10
 
 # Copy files: 
