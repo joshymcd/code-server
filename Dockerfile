@@ -28,8 +28,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
-RUN sudo apt-get install -y nodejs
-RUN sudo apt-get install -y npm
+RUN curl -o- https://fnm.vercel.app/install | bash
+RUN fnm install 22
 RUN sudo npm install -g pnpm@latest-10
 
 # Copy files: 
