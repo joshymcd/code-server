@@ -30,7 +30,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # RUN sudo apt-get install -y ubuntu-make
 RUN sudo apt-get install -y nodejs 
 RUN sudo apt-get install -y npm 
-# RUN sudo npm install -g pnpm@latest-10
+RUN sudo npm install -g pnpm@latest-10
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
