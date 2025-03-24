@@ -1,5 +1,5 @@
 # Start from the code-server Debian base image
-FROM codercom/code-server:ubuntu
+FROM codercom/code-server:4.98.2-39
 
 USER coder
 
@@ -29,6 +29,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 RUN sudo apt install -y nodejs 
+RUN sudo apt install -y npm 
 # RUN sudo npm install -g pnpm@latest-10
 
 # Copy files: 
